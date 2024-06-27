@@ -1,0 +1,525 @@
+:root {
+    --clr-white: #fff;
+    --clr-black: #000;
+
+    --clr-text-black: #000;
+    --clr-text-white: #fff;
+
+    --clr-bg-gray: #D9D9D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--clr-black);
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3.5vw;
+     font-family: "Ledger", serif;
+     font-weight: 200;
+     word-break: keep-all;
+}
+
+/* Upper Header */
+
+.upper-header {
+    background-color: var(--clr-text-black);
+    color: var(--clr-text-white);
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Kodchasan", sans-serif;
+
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    justify-content: space-between;
+
+
+    background: var(--clr-bg-gray);
+
+    
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-left-logo {
+    display: flex;
+    align-items: center;
+    gap: 8vw;
+    padding-left: 25px;
+
+    font-size: 4.5vw;
+
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+
+    border-bottom: 1px solid black;
+}
+
+.header-left-logo img {
+    max-width: 15vw;
+    margin-top: -10px;
+    position: relative;
+    z-index: 99;
+}
+
+.header-left ul {
+    display: flex;
+}
+
+.header-left ul li {
+    font-family: "Kodchasan", sans-serif;
+    font-size: 2vw;
+    padding: 3vw 5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-left ul li:hover {
+    background-color: #A6A4A4;
+}
+
+.header-right {
+    font-size: 3.6vw;
+    font-family: "Monoton", sans-serif;
+    font-weight: 200;
+    text-align: right;
+
+    height: 100%;
+
+    border-left: 1px solid black;
+
+    transform: rotate(0deg);
+
+    -webkit-transform: skewX(-30deg);
+		-moz-transform: skewX(-30deg);
+		-ms-transform: skewX(-30deg);
+		transform: skewX(-30deg);
+    
+    position: relative;
+    z-index: 99;
+    background-color: var(--clr-bg-gray);
+    align-self: center;
+
+}
+
+.header-right p {
+    transform: rotate(0deg);
+
+    -webkit-transform: skewX(30deg);
+		-moz-transform: skewX(30deg);
+		-ms-transform: skewX(30deg);
+		transform: skewX(30deg);
+
+    position: relative;
+    top: 12%;
+    right: 15px;
+    position: absolute;
+    color: var(--clr-text-white);
+
+
+}
+
+
+/* Hero */
+
+.hero {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 200ch;
+
+    text-align: center;
+
+    padding: 10vw 2vw;
+    margin: 0 auto;
+
+    color: var(--clr-text-white);
+}
+
+.hero-heading p {
+   font-size: 3.2vw; 
+   max-width: 40ch;
+
+   margin-top: 14vw;
+   margin-bottom: 14vw;
+
+   text-align: center;
+    font-family: "Ledger", serif;
+    font-weight: 200;
+}
+
+.hero-bottom-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding: 0 25px 52px 25px;
+}
+
+.benefits {
+    color: var(--clr-text-white);
+    font-size: 3.5vw;
+    font-family: "Monomaniac One", sans-serif;
+    opacity: .6;
+}
+
+.brand {
+    color: var(--clr-white);
+    font-size: 2.5vw;
+    font-family: 'Lexend Exa', sans-serif;
+    opacity: .3;
+}
+
+/* Footer */
+
+footer {
+    background:var(--clr-black);
+
+    color: var(--clr-white);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    padding: 0 56px 25px 56px;
+}
+
+.footer-left {
+    display: flex;
+    gap:56px;
+    align-items: flex-end;
+}
+
+.footer-left img {
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.logo-canyon {
+    width: 20vw;
+}
+
+.footer-left ul {
+    margin-right: 30px;
+}
+
+.footer-left ul li{
+    font-size: 2vw;
+    margin-top: 24px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+
+.footer-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 2vw;
+    font-family: 'Kodchasan', sans-serif;
+    padding-bottom: 10px;
+
+    font-size: 1.2vw;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.catalogue {
+    background-image: url('img/bg-catologue.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 25px 58px 58px 58px;
+}
+
+.catalogue h1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2vw;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--clr-white);
+    margin-bottom: 4vw;
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+
+}
+
+.catalogue-item {
+    border-radius: 10px; 
+    background-color: #AEAEAE;
+    overflow: hidden;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.5vw;
+}
+
+.brand-name {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.catalogue-item-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catalogue-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.catalogue-item-content a {
+    padding: 20px;
+    background-color: #979595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 50px;
+    padding: 8px 5vw;
+    margin-top: 25px;
+    transition: all .3s ease-in-out;
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 600;
+}
+
+.catalogue-item-content a:hover {
+    background-color: var(--clr-bg-gray);
+
+}
+
+@media (max-width: 1023px) {
+
+
+    .header-right {
+        font-size:3vw;
+        right: 10px;
+    }
+
+    .header-right p {
+        top: 20%;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-bottom: 10px;
+    }
+
+    .footer-left {
+        gap: 14px;
+    }
+
+    .footer-left img {
+        padding-bottom: 0;
+    }
+
+    .footer-left img {
+        width: 10vw;
+        padding-top: 18px;
+    }
+
+    .footer-left .logo-canyon {
+        width: 20vw;
+    }
+
+    .footer-left ul li {
+        margin-top: 5px;
+    }
+
+    .footer-right .social-icons {
+        width: 16px;
+        gap: 8px;
+    }
+
+    .footer-right {
+        padding-bottom: 0;
+    }
+
+    .footer-left .logo-canyon {
+        width: 30vw; 
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 20px;
+        width: 21ch;
+    }
+
+    .upper-header {
+        font-size: 10px;
+    }
+
+    .header-left-logo {
+        gap: 8px;
+        padding-left: 8px;
+    }
+
+    .header-left ul li{
+        font-size: 12px;
+        padding: 16px 10px;
+    }
+
+    .hero {
+        height: auto;
+        background-image: url('img/bg-mobile.jpg');
+    }
+
+    .hero-heading {
+        padding-top: 100px;
+    }
+
+    .hero-heading p {
+        font-size: 20px;
+        width: 24ch;
+
+    }
+    
+    .hero-bottom-content {
+        padding: 8px;
+        padding-bottom: 18px;
+    }
+
+    .benefits {
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .footer-left ul li{
+        font-size: 13px;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+
+    .footer-left img {
+        width: 13vw;
+    }
+
+    .footer-right {
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .footer-right p {
+        font-size: 7px;
+    }
+
+    .catalogue {
+        padding: 25px;
+    }
+
+    .catalogue h1 {
+        font-size: 16px;
+    }
+
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .catalogue-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .catalogue-item > * {
+        flex:1;
+    } 
+     
+    .catalogue-item-content {
+        gap: 0px;
+        font-size: 12px;
+        padding: 2px 14px;
+        width: 50%;
+    }
+
+    .brand-name {
+        font-size: 16px;
+    }
+    .catalogue-item img {
+        width: 50%;
+        border-radius: 10px;
+        max-height: auto;
+    }
+    .catalogue-item-content a {
+        margin-top: 1vw;
+        font-size: 2vw;
+        padding: 4px 8px;
+        width: 40%;
+    }
+}
+
